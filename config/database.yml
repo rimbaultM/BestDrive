@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: BestDrive_production
-  username: BestDrive
-  password: <%= ENV['BESTDRIVE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['POSTGRESQL_ADDON_URI'] %>
